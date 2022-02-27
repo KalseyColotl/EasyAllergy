@@ -1,0 +1,45 @@
+# These snippets of code represent ideas that were implemented as part of the EasyAllergy app. 
+# The purpose of the app is to help those with food allergies manage their allergies more easily
+# and allow them to access helpful resources. 
+# Variable names and formatting may not be exactly the same within the app.
+
+# This part of the program allows the user to copy and paste a list of ingredients, which will then be checked for the 
+# specified allergen. 
+
+print ("Hello! Welcome to Your Food Checker.")
+
+print ("Please enter list of ingredients: ")
+ing_list = [input()] 
+    
+print("What allergen would you like to search for? Please enter: ")
+allergen = input()
+    
+for i in range(len(ing_list)):
+    if (allergen in ing_list[i]):
+        print("This list contains the following allergen: ")
+        print (allergen)
+    else:
+	print ("No signs of this allergen")
+        
+print ("Thank you for using Your Food Checker!")
+
+###############
+
+# This part of the program allows the user to take a quiz to see if they have had food allergy symptoms in the past
+
+print ("Welcome to the Allergy Quiz")
+print ("Answer the questions and see if you might have a food allergy")
+
+q1 = input("Have you ever had swelling of your facial area or other parts of the body after eating?")
+
+q2 = input("Have you ever had itchiness or a skin rash after eating?")
+
+q3 = input("Have you ever felt dizzy or out of breath after eating?")
+
+if q1 == "yes" or q2 == "yes" or q3 == "yes":
+  print ("You may want to see a doctor about a potential food allergy.")
+
+if (q1 == "no") and (q2 == "no") and (q3 == "no"):
+  print ("You probably do not have a food allergy.")
+
+print ("Remember to listen to your body and always ask a doctor for medical advice!")  
